@@ -1,7 +1,7 @@
 # Clinica
 paso a pasos de como usar git :
 
-1.- git clone "link github"
+1.- git clone "https://github.com/noxettix/Clinica.git"
 
 2.- git status -->para ver los archivos modificados
 
