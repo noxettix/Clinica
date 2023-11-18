@@ -1,0 +1,79 @@
+{% extends "iniciodepagina/base.html" %}
+
+{% block contenido %}
+    <div class="container">
+        <div class="row mt-5">
+            <div class="col">
+                <h2>Ingreso de Pacientes</h2>
+                <form method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        {{ form.non_field_errors }}
+                        <div class="col-3 mb-3">
+                            {{ form.run.label_tag}}
+                            {{ form.run}}
+                            <div class="text-danger">
+                            {{ form.run.errors}}
+                            </div>
+                        </div>
+                        <div class="col-3 mb-3">
+                            <label for="id_nombre">Primer Nombre:</label>
+                            {{ form.primernombre }}
+                            {{ form.primernombre.errors }}
+                        </div>
+                         <div class="col-3 mb-3">
+                            <label for="id_paterno">Apellido Paterno:</label>
+                            {{ form.primerapellido }}
+                            {{ form.primerapellido.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            <label for="id_materno">Apellido Materno:</label>
+                            {{ form.segundoapellido }}
+                            {{ form.segundoapellido.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            {{ form.sexo.label_tag }}
+                            {{ form.sexo }}
+                            {{ form.sexo.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            {{ form.telefono.label_tag }}
+                            {{ form.telefono }}
+                            {{ form.telefono.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            {{ form.mail.label_tag }}
+                            {{ form.mail }}
+                            {{ form.mail.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            {{ form.direccion.label_tag }}
+                            {{ form.direccion }}
+                            {{ form.direccion.errors }}
+                         </div>
+                         <div class="col-3 mb-3">
+                            {{ form.discapacidad.label_tag }}
+                            {{ form.discapacidad }}
+                            {{ form.discapacidad.errors }}
+                         </div>
+                         {% if form.errors %}
+                         <div class="alert alert-danger">
+                            {{ form.errors }}
+                         </div>
+                         {% endif %}
+                         
+                        
+                    </div>
+                    <div class="row">
+                        <div class="d-flex justify-content-end">
+                            <a class="btn btn-dark" href="{% url 'inicio' %}">Inicio</a>&nbsp;
+                        </div>   
+                        <div class="col">
+                            <button type="submit"
+                                class='"btn btn-primary'>Guardar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock %}
