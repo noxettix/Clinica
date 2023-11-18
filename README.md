@@ -19,12 +19,16 @@ paso a pasos de como usar git :
 <img width="557" alt="Captura de pantalla 2023-11-17 a la(s) 21 19 57" src="https://github.com/noxettix/Clinica/assets/75053380/2329f016-15f3-4ec1-b325-9c65a44d0329">
 
 
+
 5.-git push -u origin main -->guardar cambio en el repositorio
+
 <img width="518" alt="Captura de pantalla 2023-11-17 a la(s) 21 20 29" src="https://github.com/noxettix/Clinica/assets/75053380/fb9671b8-16de-43e1-b8fb-321b0f3ef4e8">
 
 
-git log --> ver los cambios guardados
+
+6.-git log --> ver los cambios guardados
+
 <img width="582" alt="Captura de pantalla 2023-11-17 a la(s) 21 20 45" src="https://github.com/noxettix/Clinica/assets/75053380/90ee4964-732f-44e8-be88-31305c46f0c5">
 
-
-git checkout serial del commit --> volver a la version anterior
+---------------------------------------------------------
+#git checkout serial del commit --> volver a la version anterior
